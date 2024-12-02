@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+/* logo*/
+nav img {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+/* Decoraties voor de nav */
+nav a {
+    color: #8E7DAC;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Nav komt dan in het midden terecht*/
+header nav ul {
+    display: flex;
+    font-size: larger;
+    list-style: none;
+    gap: 60px;
+    background-color: white;
+    width: 100%;
+
+}
+
+h1 {
+    font-family: "Patua One", serif;
+    font-weight: 200;
+    text-align: center;
+    color: #D565A5;
+}
+
+h2 {
+    color: #D565A5;
+
+}
+
+p {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+/* de achtergrond van de begin section en grootte*/
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F0E6;
+    padding: 10px;
+}
+
+section:first-of-type img{
+    width: 15em;
+    height: auto;
+    border: 5px solid #BAD5E7;
+    border-radius: 20px;
+}
+
+ /* Plaatst de tekst naast de afbeelding */
+section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main a {
+    color: #731F29;
+}
+
+nav a:hover {
+    color: #D565A5
+}
+
+section:nth-of-type(2) img {
+    width: 102%;
+    height: auto;
+    margin-top: -10px;
+
+}
+
