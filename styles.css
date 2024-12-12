@@ -1,111 +1,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 /* logo*/
-nav img {
-    width: 150px;
+img:first-child {
+    width: 10em;
     height: auto;
 }
 
-header {
-    background-color: white;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-}
-
-/* Decoraties voor de nav */
+/* Nav */
 nav a {
-    color: #8E7DAC;
     font-weight: bold;
-    text-decoration: none;
 }
 
-/* Nav komt dan in het midden terecht*/
-header nav ul {
+header ul {
     display: flex;
     font-size: larger;
     list-style: none;
-    gap: 60px;
-    background-color: white;
-    width: 100%;
-
+    gap: 3em;
 }
 
-h1 {
-    font-family: "Patua One", serif;
-    font-weight: 200;
-    color: #D565A5;
-}
-
-h2 {
-    color: #D565A5;
-
-}
-
-p {
-    font-family: sans-serif;
-}
-
-
-/* de achtergrond van de begin section en grootte*/
-section:first-of-type {
+header {
     display: flex;
-    flex-direction: column;
-    background-color: #F7F0E6;
-    padding: 10px;
-}
-
-section:first-of-type img{
-    width: 15em;
-    height: auto;
-    border: 5px solid #BAD5E7;
-    border-radius: 20px;
-}
-
- /* Plaatst de tekst naast de afbeelding */
-section:first-of-type {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    
-}
-
-main a {
-    color: #731F29;
+    justify-content: space-between;
+    padding: 1em;
 }
 
 nav a:hover {
     color: #D565A5
 }
 
-section:nth-of-type(2) img {
-    width: 102%;
+/* Lettertype*/
+h1 {
+    padding: 0 1em;
+    font-family: "Patua One", serif;
+    color: #D565A5;
+    width: 100%;
+}
+
+h2 {
+    margin: 0.125em 0;
+    line-height: 1em;
+    padding: 0 1em;
+    color: #D565A5;
+    width: 100%;
+}
+
+h3 {
+    margin: 0.125em 0;
+    padding: 0 1em;
+    width: 100%;
+}
+
+p {
+    margin: 0.125em 0;
+    line-height: 1;
+    padding: 0 1em;
+    font-family: sans-serif;
+    margin-bottom: 1.25em;
+    width: 100%;
+}
+
+
+blockquote {
+    font-weight: 900;
+    color: #8E7DAC;
+}
+
+/* Welkom bij generation unzipped*/
+section:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+    background-color: #f9f3e9;
+    padding: 0.625em;
+}
+
+section:first-of-type img {
+    width: 20em;
     height: auto;
-    margin-top: -10px;
-
-}
-section:nth-of-type(2) {
-    background-color: #F7F0E6;
-    padding: 10px;
+    border: 0.3125em solid #8E7DAC;
+    border-radius: 1.25em;
 }
 
+
+
+/* Balk */
+section:nth-of-type(2) img {
+    width: 100%;
+    height: auto;
+    margin-top: -0.625em;
+}
+
+/* Populaire aflevering */
 section:nth-of-type(3) {
-    background-color: #e6def2;
-    padding: 10px;
-   
-  }
+    background-color: #8E7DAC;
+    padding: 0.625em;
+}
 
-  footer{
-    background-color: #F9AECF;
-    padding: 10px;
-  }
+/* Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25em;
+    background-color: #f0d4e0;
+}
 
-  footer h2 {
+footer ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+footer h2 {
     color: #8771ad;
-  }
+    margin-bottom: 0.5em;
+}
 
-  
+footer a:hover {
+    color: #F7F0E6;
+}
+
+footer li a {
+    font-size: large;
+    font-size: 1em;
+}
+
+footer img {
+    width: 1.875em;
+    height: auto;
+    margin-right: 0.5em;
+    animation: wiggle 1s infinite ease-in-out;
+    /* komt van bron: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect */
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Linkjes*/
+li a {
+    text-decoration: none;
+    color: #8771ad;
+}
+
+/* Afleveringen*/
+section {
+    display: flex;
+    gap: 1.25em;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: #f9c8d7;
+    border-radius: 0.5em;
+    padding: 1.25em;
+    width: 80%;
+}
+
+/* Sections*/
+section:nth-of-type(2) {
+  background-color: #F7F0E6;
+    padding: 0.625em;
+}
+
+section:nth-of-type(3) > h2 {
+    color: #F7F0E6;
+}
+
+section:nth-of-type(3) > article {
+    background-color: #F7F0E6;
+}
+
+section:nth-of-type(3) > p {
+    color: #F7F0E6;
+}
